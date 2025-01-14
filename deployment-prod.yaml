@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: frontend-movies
-          image: docker.io/zebolhd/qa-frontend-movies:latest
+          image: docker.io/qacinescope/qa-frontend-movies:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
