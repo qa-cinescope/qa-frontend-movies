@@ -32,11 +32,11 @@ interface UserDialogFormProps {
   description?: string;
   isCreate?: boolean;
   footerButtonText: string;
-  register: UseFormRegister<UserFormSchema | User>;
-  handleSubmit: (onValid: SubmitHandler<UserFormSchema | User>) => any;
-  errors: FieldErrors<UserFormSchema | User>;
-  control: Control<UserFormSchema | User>;
-  onSubmit: SubmitHandler<UserFormSchema | User>;
+  register: UseFormRegister<UserFormSchema>;
+  handleSubmit: (onValid: SubmitHandler<UserFormSchema>) => any;
+  errors: FieldErrors<UserFormSchema>;
+  control: Control<UserFormSchema>;
+  onSubmit: SubmitHandler<UserFormSchema>;
   user?: User;
   isLoading: boolean;
 }
